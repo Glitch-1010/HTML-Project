@@ -1,77 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/cart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <title>Shopping Cart</title>
-</head>
-<body>
-    <div class="siteHeader">      
-        <span class="siteLogo"><img src="res/logo.png" alt="logo" class="Logo"></span>
-        <div class="headerSearch">
-            <input type="text" name="search" id="searchBar" size="130" class="Search">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="row userprofile">
+      <div class="col-lg-12 row bg-light py-3 userprofile-header">
+        <div
+          class="col-lg-2 d-flex justify-content-center align-content-center"
+        >
+          <img src="res/logo.png" alt="logo" class="Logo" />
         </div>
-        <span class="siteSearch"><input type="image" src="res/search-icon.png" class="searchSubmit"></span>
-        <span class="siteProfile"><a href="profile.html"><img src="res/profile-icon.png" alt="profile" class="Profile"></a></span>
-    </div>
+        <div
+          class="col-lg-8 py-3 d-flex justify-content-between align-content-center"
+        >
+          <input
+            text="text"
+            name="searchbar"
+            placeholder="Search"
+            class="form-control"
+          />
+          <div class="px-3 mt-2"><i data-feather="search"></i></div>
+        </div>
+        <div
+          class="col-lg-2 d-flex justify-content-end align-content-center py-3"
+        >
+          <a href="profile.html"
+            ><img src="res/profile-icon.png" alt="profile" class="Profile"
+          /></a>
+        </div>
+      </div>
 
-    <div class="siteMenu">
-        <div class="menuBar">
-            <img src="res/menu.png" alt="menu" class="Menu">
+      <div class="col-lg-12 row userprofile-menubar py-3 mx-2">
+        <div
+          class="col-md-2 d-flex justify-content-center align-content-center py-3"
+        >
+          <i data-feather="menu"></i>
         </div>
-        <div class="menuItems">
-            <span><a href="home.html" class="Items">Home</a><a href="#" class="Items">Books</a><a href="#" class="Items">Bio</a><a href="" class="Items">Contact</a>
+        <div
+          class="col-md-8 py-3 d-flex justify-content-around align-content-center"
+        >
+          <a class="btn btn-rounded btn-md btn-outline-primary" href="home.html"
+            >&nbsp; Home &nbsp;</a
+          >
+          <a class="btn btn-rounded btn-md btn-outline-primary" href="#"
+            >&nbsp; Books &nbsp;</a
+          >
+          <a class="btn btn-rounded btn-md btn-outline-primary" href="#"
+            >&nbsp; Bio &nbsp;</a
+          >
+          <a class="btn btn-rounded btn-md btn-outline-primary" href="#"
+            >&nbsp; Contact &nbsp;</a
+          >
         </div>
-        <div class="menuCart">
-            <a href="cart.html" class="cartSelected"><img src="res/cart.png" alt="cart" class="CartSel"></a>
+        <div class="col-md-2 mt-3 text-dark">
+          <a href="cart.html"
+            ><i data-feather="shopping-bag" class="text-dark"></i
+          ></a>
         </div>
-    </div>
-
-    <div class="siteContent">
+      </div>
+      <div class="siteContent">
         <h1 class="checkOut">Check Out</h1>
         <div class="cartContainer">
-            <table>
-                <tr>
-                    <th class="cartName">Item Name</th>
-                    <th class="cartPrice">Item Price</th>
-                    <th class="cartAction">Actions</th>
-                </tr>
-                <tr>
-                    <td class="contentName"><img src="res/deathly_hallows.jpg" alt="deathly_hallows" class="cartBook"><span class="bookLabel">Harry Potter and the<br /> Deathly Hallows</span></td>
-                    <td class="contentPrice"><span class="bookPrice">&#8369; 1,125</span></td>
-                    <td class="contentAction"><span class="bookAction"><a href="#" class="remove">Remove</a></span></td>
-                </tr>
-            </table>
+          <table>
+            <tr>
+              <th class="cartName">Item Name</th>
+              <th class="cartPrice">Item Price</th>
+              <th class="cartAction">Actions</th>
+            </tr>
+            <tr>
+              <td class="contentName">
+                <img
+                  src="res/deathly_hallows.jpg"
+                  alt="deathly_hallows"
+                  class="cartBook"
+                /><span class="bookLabel"
+                  >Harry Potter and the<br />
+                  Deathly Hallows</span
+                >
+              </td>
+              <td class="contentPrice">
+                <span class="bookPrice">&#8369; 1,125</span>
+              </td>
+              <td class="contentAction">
+                <span class="bookAction"
+                  ><a href="#" class="remove">Remove</a></span
+                >
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="whiteBG">
-        
-        </div>
-        
+        <div class="whiteBG"></div>
+
         <div class="paymentDiv">
-            <div class="paymentText"><span>Select payment method</span></div>
-            <div class="paymentOptions">
-                <ul class="paymentCash">
-                    <li><a href="#">Cash</a></li>
-                </ul>
-                <ul class="paymentCard">
-                    <li><a href="#">Card</a></li>
-                </ul>
-                <ul class="paymentEWallet">
-                    <li><a href="#">E-Wallet</a></li>
-                </ul>
-            </div>
+          <div class="paymentText"><span>Select payment method</span></div>
+          <div class="paymentOptions">
+            <ul class="paymentCash">
+              <li><a href="#">Cash</a></li>
+            </ul>
+            <ul class="paymentCard">
+              <li><a href="#">Card</a></li>
+            </ul>
+            <ul class="paymentEWallet">
+              <li><a href="#">E-Wallet</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="checkoutContainer">
-            <span class="checkoutText"><a href="#">Check Out</a></span>
+          <span class="checkoutText"><a href="#">Check Out</a></span>
         </div>
+      </div>
     </div>
-
-    <div class="siteFooter">
-        &copy;2023 ShoBook.&ensp;All Rights Reserved.
-    </div>
-</body>
+    <div class="siteFooter">&copy;2023 ShoBook.&ensp;All Rights Reserved.</div>
+  </body>
+  <script>
+    feather.replace();
+  </script>
 </html>
