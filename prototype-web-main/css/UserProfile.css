@@ -1,0 +1,65 @@
+.UserProfile{
+background-color: #cbb683;
+height: 100%;
+width: 370px;
+position:absolute;
+text-align: center;
+
+}
+
+.profileLogo {
+    height: 290px;
+    width: 290px;
+    margin: auto;
+}
+
+.h3Texts{
+    text-align: left;
+    font-weight: none;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.OrderHistory {
+    float: right;
+    margin-right: 1300px;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 150px;
+}
+
+.OrderHistorybooks{
+    position: absolute;
+    /* right: -20px; */
+    margin-left: 400px;
+    margin-top: 100px;  
+}
+
+img.book {
+
+    width: 12%;
+    margin-left: 80px;
+}
+
+
+.OrderHistory {
+    display: inline-block;
+    margin-right: -550px;
+  }
+  .OrderHistorybooks {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .OrderHistorybooks img {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .OrderHistorybooks > div {
+    display: inline-block;
+    width: 30%;
+  }
